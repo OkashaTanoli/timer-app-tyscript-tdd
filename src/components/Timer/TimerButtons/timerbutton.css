@@ -1,0 +1,30 @@
+.timer_button{
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    background-color: rgba(59, 33, 0, 0.342);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all .3s;
+    cursor: pointer;
+}
+.timer_button:first-child{
+    border-top-right-radius: 0px;
+}
+.timer_button:last-child{
+    border-top-left-radius: 0px;
+}
+.icons{
+    color: rgb(29, 28, 28) ;
+    transition: all .5s;
+
+}
+
+.timer_button:hover{
+    background-color: rgb(94, 77, 0);
+}
+.timer_button:hover .icons{
+    color: rgb(255, 255, 255);
+}
+

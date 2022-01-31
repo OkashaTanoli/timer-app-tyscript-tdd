@@ -1,0 +1,196 @@
+.main_timer {
+    margin: 20px auto;
+    width: 700px;
+    padding:0 20px ;
+    box-shadow: 0 0 100px rgba(0, 0, 0, 0.692);
+    backdrop-filter: blur(20px) brightness(110%);
+    border-radius: 30px;
+    overflow: hidden;
+    background-color: rgba(255, 255, 255, 0.185);
+}
+.timer_app_head_section{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.set_time{
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+}
+.set_min,.set_sec{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100px;
+}
+.set_sec{
+    margin-left: 20px;
+}
+.min_heading{
+    line-height: 0px;
+    color: rgb(29, 28, 28);
+    font-weight: 900;
+}
+.input{
+    border: 2px solid rgba(255, 255, 255, 0.671);
+    font-size: 16px;
+    padding: 8px;
+    width: 40px;
+    border-radius: 5px;
+    background-color: transparent;
+}
+.input:focus{
+    outline: none;
+}
+.timer_app_head {
+    font-weight: 900;
+    text-transform: uppercase;
+    font-size: 40px;
+    text-shadow: 0 0 20px black;
+    color: white;
+    text-align: center;
+}
+
+.set_timer_btn{
+    margin-left: 30px;
+    border: none;
+    background-color: rgb(29, 28, 28);
+    font-weight: 900;
+    font-size: 16px;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    
+}
+
+.extra_div {
+    height: 2px;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.603);
+    margin-bottom: 50px;
+}
+.timer_btns_div{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 300px;
+    margin: 30px auto;
+}
+.menu_icon{
+    display: none;
+}
+#show_menu{
+    height: 140px !important;
+    transition: all .3s;
+}
+#dont_show_menu{
+    height: 0 !important;
+    transition: all .3s;
+
+}    
+
+.instructions{
+    text-align: center;
+    font-size: 18px;
+    font-weight: 600;
+    font-family: sans-serif;
+    color: rgb(26, 26, 26);
+    cursor: pointer;
+    align-self: center;
+    text-decoration: underline;
+}
+.instructions_div{
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(204, 204, 204, 0.835);
+    z-index: 2;
+    width: 100%; 
+    transition: all .5s;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#show_instructions_div{
+    height: 100% !important;
+    color: black !important;
+}
+#hide_instructions_div{
+    height: 0px !important;
+    color: transparent !important;
+}
+.instructions_div h1{
+    color: rgb(14, 14, 14);
+    text-decoration: underline;
+}
+.instructions_div ul{
+    font-size: 20px;
+    font-weight: 500;
+}
+.instructions_div ul li{
+    margin-bottom: 10px;
+}
+.instructions_div ul li div{
+    display: flex;
+    align-items: flex-start;
+}
+
+@media(max-width:750px){
+    .main_timer {
+        width: 80%;
+    }
+    .timer_app_head_section{
+        display: block;
+    }
+    .set_time{
+        margin-bottom: 15px;
+    }
+}
+@media (max-width:450px) {
+    .set_time{
+        width: 80%;
+        display: block;
+        margin-bottom: 15px !important;
+        margin: 0 auto;
+    }
+    .set_min,.set_sec{
+        width: 100%;
+        margin-bottom: 10px !important;
+    }
+    .set_sec{
+        margin-left: 0px;
+    }
+    .input{
+        width: 65%;
+    }
+    .set_timer_btn{
+        margin-left: 0px;
+        width: 100%;
+        padding: 10px ;
+    }
+    .timer_app_head {
+        font-size: 35px;
+    }
+    .menu_icon{
+        display: block;
+    }
+    .instructions_div ul{
+        font-size: 17px;
+        font-weight: 500;
+    }
+}
+@media (max-width:370px) {
+    .timer_btns_div{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        width: 250px;
+        margin: 50px auto;
+    }
+    .timer_app_head {
+        font-size: 30px;
+    }
+}

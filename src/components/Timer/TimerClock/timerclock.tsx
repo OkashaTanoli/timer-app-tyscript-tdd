@@ -4,14 +4,14 @@ import 'react-circular-progressbar/dist/styles.css';
 import './timerclock.css'
 
 
-type TimerClock = {
+type TimerClockType = {
     second: number;
     minute: number,
     selectMin: number,
     selectSec: number;
     isReset: boolean
 }
-function TimerClock({ second, minute, selectMin, selectSec, isReset }: TimerClock) {
+function TimerClock({ second, minute, selectMin, selectSec, isReset }: TimerClockType) {
 
     type buildStylesType = {
         rotation: number,

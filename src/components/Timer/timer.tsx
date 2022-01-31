@@ -25,10 +25,10 @@ function Timer({ secChanger, minChanger, selectMin, selectSec }: TimerType) {
         setIsOn(true)
         setIsReset(true)
     }
-    let myinterval: any;
     useEffect(() => {
         // console.log("before" + sec, min, isOn)
-
+        
+        let myinterval: any;
         if (isOn === true) {
             myinterval = window.setTimeout(() => {
                 if (sec > 0) {
@@ -47,14 +47,15 @@ function Timer({ secChanger, minChanger, selectMin, selectSec }: TimerType) {
                 }
             }, 1000)
         }
+        return ()=> clearTimeout(myinterval)
     }, [isOn, min, sec])
 
     const stopTimerClock = () => {
         setIsOn(false)
-        clearTimeout(myinterval)
+        // clearTimeout(myinterval)
     }
     const resetTimerClock = () => {
-        clearTimeout(myinterval)
+        // clearTimeout(myinterval)
         setSec(selectSec)
         setMin(selectMin)
         setIsOn(false)

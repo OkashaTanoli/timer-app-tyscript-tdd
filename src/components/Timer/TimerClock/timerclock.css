@@ -3,9 +3,9 @@
     height: 250px;
     margin: 20px auto;
     padding: 20px;
-    background-color: rgba(128, 74, 3, 0.514);
+    background-color: rgba(133, 86, 25, 0.514);
     border-radius: 50%;
-    box-shadow: inset 0 0 50px rgb(88, 40, 0);
+    box-shadow: inset 0 0 50px rgba(88, 40, 0, 0.698);
 }
 
 .clock_time {
@@ -17,7 +17,7 @@
     height: 180px;
     border-radius: 50%;
     /* background-color: lemonchiffon; */
-    box-shadow: inset 0 0 30px rgb(82, 37, 0);
+    box-shadow: inset 0 0 30px rgba(82, 37, 0, 0.705);
     display: flex;
     justify-content: center;
     align-items: center;
